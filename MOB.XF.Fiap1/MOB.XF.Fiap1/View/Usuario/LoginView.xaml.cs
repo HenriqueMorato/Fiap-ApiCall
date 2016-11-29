@@ -14,5 +14,10 @@ namespace MOB.XF.Fiap1.View.Usuario
         {
             InitializeComponent();
         }
+
+        protected void Autenticar_Clicked(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new View.Home.MainPage());
+        }
     }
 }

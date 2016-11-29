@@ -3,19 +3,25 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MOB.XF.Fiap1.Model
 {
+    //[DataContract]
     class UsuarioModel
     {
+        //[JsonProperty(PropertyName = "Id")]
         public int Id { get; set; }
+        //[JsonProperty(PropertyName = "Nome")]
         public string Nome { get; set; }
-        public string NickNome { get; set; }
-        //[JsonProperty("Senha")]
+        //[JsonProperty(PropertyName ="NickNome")]
+        public string NickName { get; set; }
+        //[JsonProperty(PropertyName = "Senha")]
         public string Senha { get; set; }
+        //[JsonProperty(PropertyName = "Ativo")]
         public bool Ativo { get; set; }
 
         public static class UsuarioRepository

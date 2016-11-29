@@ -13,8 +13,9 @@ namespace MOB.XF.Fiap1
         {
             InitializeComponent();
 
-            MainPage = new MOB.XF.Fiap1.View.Usuario.LoginView();
-            //MainPage = new NavigationPage(new LoginView());
+            //MainPage = new MOB.XF.Fiap1.View.Usuario.LoginView();
+            MainPage = new NavigationPage(new View.Usuario.HomeView());
+            //MainPage = new NavigationPage(new View.Usuario.UserListView());
         }
 
         protected override void OnStart()

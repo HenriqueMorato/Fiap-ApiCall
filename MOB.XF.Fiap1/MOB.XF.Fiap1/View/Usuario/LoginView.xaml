@@ -2,5 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MOB.XF.Fiap1.View.Usuario.LoginView">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+
+  <ContentPage.Content>
+    <StackLayout Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+      <Label Text="Autenticar" Font="25" />
+      <Entry Placeholder="Usuario" />
+      <Entry Placeholder="Senha" />
+      <StackLayout Padding="10">
+        <Button Text="Entrar" Clicked="Autenticar_Clicked" />
+      </StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+  
+  
 </ContentPage>
